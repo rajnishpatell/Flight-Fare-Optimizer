@@ -4,6 +4,6 @@ import { authMiddleware } from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
-router.post("/search", searchFlights);
+router.post("/search", authMiddleware, searchFlights);
 
 export default router;
