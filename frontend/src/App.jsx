@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
   <div className="flex flex-col min-h-screen">
     <Navbar />
     <Toaster position="top-center" reverseOrder={false} />
-    <main className="flex-1">{children}</main>
+    <main className="flex-1 pt-20">{children}</main>
     <Footer />
   </div>
 );
