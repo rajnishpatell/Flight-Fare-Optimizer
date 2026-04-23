@@ -84,7 +84,7 @@ export default function SearchResults() {
 
       return 0;
     });
-
+  
   // 🔥 BOOKING SIMULATION
   const handleSelectFlight = async (flight) => {
     try {
