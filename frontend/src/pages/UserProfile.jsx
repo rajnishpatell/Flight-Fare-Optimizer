@@ -88,8 +88,7 @@ export default function UserProfile() {
   // Avatar upload
   const uploadAvatar = async (e) => {
     const file = e.target.files[0];
-    console.log("Sending token:", token);
-
+   
     if (!file) return;
 
     let formData = new FormData();
@@ -142,7 +141,7 @@ export default function UserProfile() {
         "http://localhost:5000/api/user/request-email-change",
         { newEmail },
         { headers: { Authorization: `Bearer ${token}` } }
-      );
+      ); 
 
       alert("Verification email sent to new email address!");
       setEmailModal(false);

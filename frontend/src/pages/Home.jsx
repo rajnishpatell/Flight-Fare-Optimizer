@@ -11,9 +11,6 @@ const Home = () => {
 
   const handleSearch = async (params) => {
     try {
-      await axios.post("http://localhost:5000/api/search/log", params, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
       navigate("/results", { state: params });
     } catch {
       navigate("/results", { state: params });
